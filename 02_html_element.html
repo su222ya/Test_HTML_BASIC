@@ -1,0 +1,86 @@
+<!DOCTYPE html>    <!-- 문서종류(html) 알려줌-->
+<!-- html은 tag로 구성된 언어에요!-->
+<!-- tag는 두가지 종류가 있어요!
+     1. 시작태그와 닫는태그로 구성된 태그가 있어요!
+     2. 시작태그만 가지고 있는 태그가 있어요!
+     -->
+<!--
+     tag는 중첩구조를 가질 수 있어요!
+     하나의 tag가 다은 tag들을 포함할 수 있어요.
+     이때 부모와 자식, 후손의 관게가 성립해요!
+
+     tag와 tag안에 포함된 요소들을 통칭해서
+     =>element라고 불러요( 태그와 태그 사이에 포함되있는것과 태그까지 싹다 포함해서)
+     => tag
+     => property, attribute
+
+     html문서는 크게 2가지 부분으로 구성되요!
+     <head> : 설정부분
+     <body> : web browser에서 rendering 할 데이터.
+
+     tag는 크게 두가지 종류가 있어요!
+     1. block level element
+        무조건 1라인을 차지
+     2. inline element
+        내용에 대한 영역만 차지
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">   <!--언어를 설정해주는 역학-->
+        <title>Title</title>
+
+        <style>
+            .myclass{
+                color: purple;
+                background-color: plum;
+                font-size: 30pt;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <h1 class="myclass">파추호네♥</h1>   <!-- 제목을 찍고 싶을때-->
+        <img src="image/ppp.jpg" width="300">
+
+        <h2> 나은이</h2>
+        <img src="image/nnn.jpg" width="300">
+
+        <h3 class="myclass">건후</h3>
+        <img src="image/ggg.jpg" width="300">
+
+        <span>이것은 소리없는 아우성</span>     <!-- inline element,딱 저 글자가 들어갈 수있는 영역만 잡아줌-->
+        <div>이것은 소리없는 아우성</div>       <!-- block level element, 무조건 한줄을 차지-->
+        <!-- 모든 텍스트는 태그안에 포함되있는 형태로 만들어 주는게 좋다-->
+
+        <img src="image/car.jpg" width="300"
+              data-author="홍길동">   <!-- 브라우져가 한번더 접속해서 그림정보만 빼옴-->
+                                     <!-- html에서 스타일을 설정하는건 좋은방식이 아니다! CSS에서 해야한다-->
+                                     <!-- data-는 내가 속성을 만드록 싶을때 사용!-->
+
+
+
+        <!-- ul => 순서없는 목록-->
+        <br><br> <!-- 엔터키-->
+        <ul>
+            <li> 서울</li> <li class="myclass"> 인천</li> <li> 세종</li>
+
+        </ul>
+        <!-- ol => 순서있는 목록 -->
+        <ol>
+            <li> 서울</li>
+            <li > 인천</li>
+            <li> 세종</li>
+        </ol>
+    <a href="http://www.naver.com">여기를 클릭클릭!</a>
+        <!-- 클릭 가능한 문자로 바뀌고 클릭하면 적힌 주소로 간다!-->
+
+        <!-- 사용자 입력 양식 -->
+    <input type="button" value="버튼을 누르세요!">
+    <input type="text">
+    <input type="date">
+        <input type="color">
+
+    </body>
+</html>
